@@ -28,7 +28,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
     </ListBox>
-    <Button Command="{Binding OpenBattle}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Выбрать" Margin="0,0,0,8" Width="100" Height="25" FontSize="14" Background="#FFD6D6D6" BorderBrush="#FF7E3814"/>
+        <Button Command="{Binding OpenBattle}" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Выбрать" Margin="0,0,0,8" Width="100" Height="25" FontSize="14" Background="#FFD6D6D6" BorderBrush="#FF7E3814"/>
 
         <StackPanel  Grid.Column="1" VerticalAlignment="Center" Margin="10,0,10,0" Width="360">
             <TextBlock Text="Имя персонажа:" FontSize="16" Foreground="White" FontWeight="Bold"/>
@@ -44,7 +44,8 @@
             <TextBlock Text="{Binding SelectedHero.Weapon.Name}" FontSize="14" Margin="0,0,0,10" Foreground="White"/>
 
             <TextBlock Text="Выбор комнаты:" FontSize="16" Foreground="White" FontWeight="Bold"/>
-            <ComboBox     ItemsSource="{Binding Rooms}" 
+            <ComboBox     
+                          ItemsSource="{Binding Rooms}" 
                           SelectedItem="{Binding SelectedRoom}"
                           DisplayMemberPath="ID" />
         </StackPanel>
