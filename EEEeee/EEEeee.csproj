@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\1587479914_18-p-foni-pro-ad-46.jpg" />
+    <None Remove="Views\1619388982_3-phonoteka_org-p-fon-ada-dlya-fotoshopa-3.jpg" />
+    <None Remove="Views\1645311754_54-phonoteka-org-p-zadnii-fon-ad-58.jpg" />
+    <None Remove="Views\images.png" />
+    <None Remove="Views\Без названия %281%29.png" />
+    <None Remove="Views\Без названия %282%29.png" />
+    <None Remove="Views\Без названия.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Foto\1587479914_18-p-foni-pro-ad-46.jpg" />
+    <Resource Include="Foto\1645311754_54-phonoteka-org-p-zadnii-fon-ad-58.jpg" />
+    <Resource Include="Foto\1619388982_3-phonoteka_org-p-fon-ada-dlya-fotoshopa-3.jpg" />
+    <Resource Include="Foto\Без названия %281%29.png" />
+    <Resource Include="Foto\Без названия.png" />
+    <Resource Include="Foto\images.png" />
+    <Resource Include="Foto\Без названия %282%29.png" />
+  </ItemGroup>
+
+</Project>
