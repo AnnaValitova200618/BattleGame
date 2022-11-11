@@ -1,0 +1,57 @@
+﻿<Page x:Class="EEEeee.Views.AllPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EEEeee.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="770"
+      Title="AllPage">
+
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Foto/1619388982_3-phonoteka_org-p-fon-ada-dlya-fotoshopa-3.jpg"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Выбранный персонаж" HorizontalAlignment="Center" Foreground="White" FontSize="16" VerticalAlignment="Top" FontWeight="Bold" TextDecorations="Underline"/>
+        <TextBlock HorizontalAlignment="Stretch"  Height="47" VerticalAlignment="Bottom" FontSize="14" Foreground="White" Background="#827B2525" />
+
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Button  Margin="0,0,10,0" Width="105" BorderBrush="#FF4E1F1F">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Foto/Без названия.png"/>
+                </Button.Background>
+            </Button>
+            <Button  Margin="0,0,10,0" Width="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Foto/Без названия (2).png" />
+                </Button.Background>
+            </Button>
+            <Button  Margin="0,0,10,0" Width="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Foto/Без названия (1).png"/>
+                </Button.Background>
+            </Button>
+            <Button  Margin="0,0,10,0" Width="105">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Foto/images.png" />
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+        <TextBlock Grid.Row="1" Text="Список игроков, находящихся в этой комнате" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="16" Foreground="White" FontWeight="Bold" HorizontalAlignment="Center" TextAlignment="Center" TextDecorations="{x:Null}"/>
+        <ListBox Grid.Row="1" Margin="6,6,6,6" Height="280" Foreground="White" Background="#827B2525" VerticalAlignment="Bottom"/>
+
+        <ListView Grid.Row="1" Grid.Column="1" Margin="7" Foreground="White" Background="#827B2525"/>
+    </Grid>
+</Page>
