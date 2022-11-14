@@ -17,10 +17,12 @@ namespace EEEeee.ViewMdels
     {
         public CustomCommand OpenBattle { get; set; }
         public CustomCommand GetHero { get; set; }
+        public CustomCommand GetRoom { get; set; }
+
         private readonly CurrentPageControl currentPageControl;
 
         public List<Hero> List1 { get; set; } = new List<Hero>();
-        public List<Room> Rooms { get; set; } = new List<Room>();
+        
 
         HttpClient client = new HttpClient();
         JsonSerializerOptions options = new JsonSerializerOptions
@@ -30,7 +32,6 @@ namespace EEEeee.ViewMdels
         };
 
         private Room selectedRoom;
-
         public Room SelectedRoom
         {
             get => selectedRoom;
@@ -75,6 +76,8 @@ namespace EEEeee.ViewMdels
             });
 
             GetHero.Execute(null);
+
+            
         }
     }
 }
