@@ -28,7 +28,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
     </ListBox>
-        <Button Command="{Binding OpenBattle}" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Выбрать" Margin="0,0,0,8" Width="100" Height="25" FontSize="14" Background="#FFD6D6D6" BorderBrush="#FF7E3814"/>
+        <Button Command="{Binding SelectHero}" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Выбрать" Margin="0,0,0,8" Width="100" Height="25" FontSize="14" Background="#FFD6D6D6" BorderBrush="#FF7E3814"/>
 
         <StackPanel  Grid.Column="1" VerticalAlignment="Center" Margin="10,0,10,0" Width="360">
             <TextBlock Text="Имя персонажа:" FontSize="16" Foreground="White" FontWeight="Bold"/>
@@ -48,7 +48,11 @@
                           ItemsSource="{Binding Rooms}" 
                           SelectedItem="{Binding SelectedRoom}"
                           DisplayMemberPath="ID" />
+            
+            <TextBlock Text="Хотите создать комнату?" FontSize="16" Foreground="White" FontWeight="Bold" Margin="0,0,0,10"/>
+            <Button Content="Создать комнату" Command="{Binding CreateNewRoom}" FontWeight="Bold" VerticalAlignment="Bottom"    FontSize="14" Background="#FFD6D6D6" BorderBrush="#FF7E3814"/>
         </StackPanel>
+        <Button Command="{Binding OpenBattle}" Grid.Column="1" FontWeight="Bold" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Начать игру" Margin="0,0,0,8" Width="100" Height="25" FontSize="14" Background="#FFD6D6D6" BorderBrush="#FF7E3814"/>
 
     </Grid>
 </Page>

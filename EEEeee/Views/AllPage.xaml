@@ -42,7 +42,7 @@
                     <ImageBrush ImageSource="/Foto/Без названия (1).png"/>
                 </Button.Background>
             </Button>
-            <Button  Margin="0,0,10,0" Width="105">
+            <Button Command="{Binding Exit}" Margin="0,0,10,0" Width="105">
                 <Button.Background>
                     <ImageBrush ImageSource="/Foto/images.png" />
                 </Button.Background>
